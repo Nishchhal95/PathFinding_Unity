@@ -1,5 +1,6 @@
 - Left click to chose a staring point(RED) and click again to chose an end point(GREEN).
--  Right click to make a block Blocked??? or make it not walkable(Turns Black).
+- Yellow means processing nodes.
+- Right click to make a block Blocked??? or make it not walkable(Turns Black).
 - You can also use the Debug Mode to actually visually see how the pathfinding works.
 - Use The GridManager Script to change the size of the Grid.
 - Clear Path clears the path, processing nodes and even the start and end positions.
