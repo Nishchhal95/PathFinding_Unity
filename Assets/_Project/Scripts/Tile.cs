@@ -12,6 +12,7 @@ public class Tile : MonoBehaviour
     [field: SerializeField] public Tile parentTile { get; private set; }
     [field: SerializeField] public bool IsWalkable { get; private set; }
     [field: SerializeField] public float Heuristic { get; set; }
+    public float Distance { get; set; } = float.MaxValue;
 
     private Color defaultColor = Color.white;
     private Color startColor = Color.red;
@@ -82,6 +83,8 @@ public class Tile : MonoBehaviour
     {
         parentTile = null;
         IsWalkable = true;
+        Distance = float.MaxValue;
+        Heuristic = 0;
         ChangeState(TileState.Default);
         arrowGO.SetActive(false);
     }

@@ -3209,6 +3209,7 @@ GameObject:
   - component: {fileID: 1522803546}
   - component: {fileID: 1522803548}
   - component: {fileID: 1522803549}
+  - component: {fileID: 1522803550}
   m_Layer: 0
   m_Name: PathFinding
   m_TagString: Untagged
@@ -3264,6 +3265,8 @@ MonoBehaviour:
     PathFindingAlgorithm: 1
   - pathFinder: {fileID: 1522803549}
     PathFindingAlgorithm: 2
+  - pathFinder: {fileID: 1522803550}
+    PathFindingAlgorithm: 3
   <IsDebug>k__BackingField: 0
   <PathFindingAlgorithm>k__BackingField: 0
 --- !u!114 &1522803548
@@ -3290,6 +3293,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6c69ce63efcfe254fb1a3ef72455fe9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridManager: {fileID: 287252339}
+  tilesToExplore: []
+  tilesVisited: []
+--- !u!114 &1522803550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1522803544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19297cf4762f70d4e98b9a6b90c0373f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   gridManager: {fileID: 287252339}
