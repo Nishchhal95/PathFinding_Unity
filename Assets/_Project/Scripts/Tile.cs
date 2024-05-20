@@ -11,6 +11,7 @@ public class Tile : MonoBehaviour
     [field: SerializeField] public Vector2Int tileArrayIndex { get; private set; }
     [field: SerializeField] public Tile parentTile { get; private set; }
     [field: SerializeField] public bool IsWalkable { get; private set; }
+    [field: SerializeField] public float Heuristic { get; set; }
 
     private Color defaultColor = Color.white;
     private Color startColor = Color.red;
